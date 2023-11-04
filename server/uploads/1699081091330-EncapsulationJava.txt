@@ -1,0 +1,25 @@
+ 
+ 
+ class Encapsulate {
+     
+     private int age;
+     private String name;
+     //Now this 2 variable are encapuslted anbd not accessed by outside the word....use getter and setter to access thsi
+     
+     public void setAge(int age){
+         this.age= age;
+     }
+     public int getAge(){
+         return this.age;
+     }
+     
+ }
+ 
+ 
+ public class Main {
+    public static void main(String[] args) {
+        Encapsulate e = new Encapsulate();
+        e.setAge(23);
+        System.out.println(e.getAge());
+    }
+}

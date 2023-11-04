@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+
+
+
+
+int fibonaccie(int n){
+    
+    if(n<=1){
+        return n;
+    }else{
+        
+        return fibonaccie(n-1) + fibonaccie(n-2);
+        
+    }
+    
+}
+
+int main(){
+int n=30;
+cout<<"Print fibonaccie numbers of : "<<n<<endl;
+
+for(int i=0;i<n;i++){
+    cout<<fibonaccie(i)<<" ";
+}
+    return 0;
+    }
+    
+
+
